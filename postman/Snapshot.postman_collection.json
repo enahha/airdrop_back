@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "9c3b83da-75b6-4888-a2dc-75469454db11",
+		"name": "Snapshot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9270377"
+	},
+	"item": [
+		{
+			"name": "testSnapshotKaia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/snapshot/snapshotKaia?collectionAddress=0x3f635476023a6422478cf288ecaeb3fdcf025e9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"snapshot",
+						"snapshotKaia"
+					],
+					"query": [
+						{
+							"key": "collectionAddress",
+							"value": "0x3f635476023a6422478cf288ecaeb3fdcf025e9f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testSnapshotEthereum",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/snapshot/snapshotEthereum?collectionAddress=0x8C58a4c09B79535867390746462DE0268a98dBdb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"snapshot",
+						"snapshotEthereum"
+					],
+					"query": [
+						{
+							"key": "collectionAddress",
+							"value": "0x8C58a4c09B79535867390746462DE0268a98dBdb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solana - Punky Kongz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"getAssetsByGroup\",\"params\":{\"groupKey\":\"collection\",\"groupValue\":\"4SVLFzpFAtAwYw5rrxzpqRHQV3pu1kDfUL1deS7Wa5Lh\",\"page\":6}}"
+				},
+				"url": {
+					"raw": "https://mainnet.helius-rpc.com/?api-key=55181376-951d-4dca-ade1-79f9f82060a4",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"helius-rpc",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "55181376-951d-4dca-ade1-79f9f82060a4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ethereum - Super G.rilla",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eth-mainnet.g.alchemy.com/nft/v3/h19_HGGOfH3lLPlbxLVcOaW9y6fssIP8/getOwnersForContract?contractAddress=0x8c58a4c09b79535867390746462de0268a98dbdb&withTokenBalances=true",
+					"protocol": "https",
+					"host": [
+						"eth-mainnet",
+						"g",
+						"alchemy",
+						"com"
+					],
+					"path": [
+						"nft",
+						"v3",
+						"h19_HGGOfH3lLPlbxLVcOaW9y6fssIP8",
+						"getOwnersForContract"
+					],
+					"query": [
+						{
+							"key": "contractAddress",
+							"value": "0x8c58a4c09b79535867390746462de0268a98dbdb"
+						},
+						{
+							"key": "withTokenBalances",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kaia - G RILLA",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic S0FTS1Y2QlIwQUxXM05BRDlIU1NPUjNDOjJpeXlSYTVROEt2eUZtX3gwZ1lJRmdzbmRtU09wYk52bTdrdmZpRGo=",
+						"type": "text"
+					},
+					{
+						"key": "x-chain-id",
+						"value": "8217",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://th-api.klaytnapi.com/v2/contract/nft/0x3f635476023a6422478cf288ecaeb3fdcf025e9f/token?size=5",
+					"protocol": "https",
+					"host": [
+						"th-api",
+						"klaytnapi",
+						"com"
+					],
+					"path": [
+						"v2",
+						"contract",
+						"nft",
+						"0x3f635476023a6422478cf288ecaeb3fdcf025e9f",
+						"token"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(사용안함) Kaia - G RILLA - 1. 전체 홀더",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic S0FTS1Y2QlIwQUxXM05BRDlIU1NPUjNDOjJpeXlSYTVROEt2eUZtX3gwZ1lJRmdzbmRtU09wYk52bTdrdmZpRGo=",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-chain-id",
+						"value": "8217",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api-cypress.klaytnscope.com/v2/tokens/0x3f635476023a6422478cf288ecaeb3fdcf025e9f/holders?page=2",
+					"protocol": "https",
+					"host": [
+						"api-cypress",
+						"klaytnscope",
+						"com"
+					],
+					"path": [
+						"v2",
+						"tokens",
+						"0x3f635476023a6422478cf288ecaeb3fdcf025e9f",
+						"holders"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(사용안함) Kaia - G RILLA - 2. EOA별 NFT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic S0FTS1Y2QlIwQUxXM05BRDlIU1NPUjNDOjJpeXlSYTVROEt2eUZtX3gwZ1lJRmdzbmRtU09wYk52bTdrdmZpRGo=",
+						"type": "text"
+					},
+					{
+						"key": "x-chain-id",
+						"value": "8217",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://th-api.klaytnapi.com/v2/contract/nft/0x3f635476023a6422478cf288ecaeb3fdcf025e9f/owner/0x74a2f51c1912ac7bcd3456b83ad5c4ce9664fdcb?size=1000",
+					"protocol": "https",
+					"host": [
+						"th-api",
+						"klaytnapi",
+						"com"
+					],
+					"path": [
+						"v2",
+						"contract",
+						"nft",
+						"0x3f635476023a6422478cf288ecaeb3fdcf025e9f",
+						"owner",
+						"0x74a2f51c1912ac7bcd3456b83ad5c4ce9664fdcb"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
